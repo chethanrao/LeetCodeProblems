@@ -26,9 +26,9 @@ class Solution {
                  return false;
         
              HashMap<String,HashSet<String>> hashMap=new HashMap<String,HashSet<String>>();
-            HashSet<String> set=null;
-        System.out.println(pairs.length);
-            for (int i=0;i<pairs.length;i++){
+             HashSet<String> set=null;
+            
+	     for (int i=0;i<pairs.length;i++){
                 if (hashMap.containsKey(pairs[i][0])){
                     set=hashMap.get(pairs[i][0]);
                     set.add(pairs[i][1]);
@@ -40,7 +40,7 @@ class Solution {
                     set.add(pairs[i][1]);
                     hashMap.put(pairs[i][0],set);
                 }
-            }
+             }
         
      
         

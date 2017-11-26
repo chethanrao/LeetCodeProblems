@@ -9,10 +9,7 @@ You may imagine that num[-1] = num[n] = -∞.
 
 For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
 
-click to show spoilers.
-
-Credits:
-Special thanks to @ts for adding this problem and creating all test cases.*/
+*/
 
 public class Solution {
     public int findPeakElement(int[] nums) {

@@ -26,9 +26,7 @@ public class Solution {
                 return i;
         }
         
-        if (nums[nums.length-1]>nums[nums.length-2])
-            return nums.length-1;
             
-        return -1;
+        return nums.length-1;
     }
 }

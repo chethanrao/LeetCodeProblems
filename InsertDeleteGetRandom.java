@@ -33,7 +33,6 @@ randomSet.getRandom();
 
 class RandomizedSet {
     
-    int length;
     
     ArrayList<Integer> list=null;
     
@@ -42,28 +41,16 @@ class RandomizedSet {
     /** Initialize your data structure here. */
     public RandomizedSet() {
         list=new ArrayList<Integer>();
-        length=0;
         hashMap=new HashMap<Integer,Integer>();     
     }
     
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
-        if (!hashMap.containsKey(val)){
-         if (list.size()==length){
+        if (!hashMap.containsKey(val)){            
           list.add(val);
-          hashMap.put(val,length);
-          length++;
-         }
-         else {
-          list.set(length,val);
-          hashMap.put(val,length);
-          length++; 
-         }
-
-
+          hashMap.put(val,hashMap.size());
+         
           return true;
-               
-
         }
         else
          return false;
@@ -74,12 +61,11 @@ class RandomizedSet {
         if (hashMap.containsKey(val)){
             int index=hashMap.get(val);  
             hashMap.remove(val);
-            if (hashMap.size()!=0){
-                list.set(index,list.get(length-1));
-                hashMap.put(list.get(length-1),index);
+            if (hashMap.size()!=index){
+                list.set(index,list.get(hashMap.size()));
+                hashMap.put(list.get(hashMap.size()),index);
             }
-            length--;
-        
+            list.remove(list.size()-1);
 
             return true; 
         }
@@ -90,12 +76,16 @@ class RandomizedSet {
     /** Get a random element from the set. */
     public int getRandom() {
          Random rand=new Random();
-        int k;
-        if (length>0)
-         k=rand.nextInt(length);
-        else k=0;
        
 
-         return list.get(k);
+         return list.get(rand.nextInt(hashMap.size()));
     }
 }
+
+/**
+ * Your RandomizedSet object will be instantiated and called as such:
+ * RandomizedSet obj = new RandomizedSet();
+ * boolean param_1 = obj.insert(val);
+ * boolean param_2 = obj.remove(val);
+ * int param_3 = obj.getRandom();
+ */

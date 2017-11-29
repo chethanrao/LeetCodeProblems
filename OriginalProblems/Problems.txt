@@ -1,0 +1,8 @@
+/*
+List of problems originally created  by me....conflict with an existing problem possible as i have not thoroughly searched the internet at this point of time.
+*/
+
+
+
+1) A median of a binary tree is defined as the elements at [depth/2,breadth/2-1],[depth/2,breadth/2+1] if depth is even and elements at [depth/2-1,breadth/2-1],[depth/2+1,breadth/2-1],[depth/2-1,breadth/2+1] and [depth/2+1,breadth/2+1].
+Given a complete binary tree...find the median?

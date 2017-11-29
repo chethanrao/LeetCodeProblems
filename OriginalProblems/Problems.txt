@@ -8,5 +8,5 @@ List of problems originally created  by me....conflict with an existing problem 
 if depth is even 
 and
 elements at [depth/2-1,breadth/2-1],[depth/2+1,breadth/2-1],[depth/2-1,breadth/2+1] and [depth/2+1,breadth/2+1]
-id depth is odd.
+if depth is odd.
 Given a complete binary tree...find the median?

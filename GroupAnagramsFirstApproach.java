@@ -60,9 +60,6 @@ class Solution {
             product=product*hashMap.get(str.charAt(i));
         }
         
-          System.out.println(product);
-                    System.out.println(str);
-                              System.out.println("---------------");
 
 
       

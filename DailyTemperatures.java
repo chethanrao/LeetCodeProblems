@@ -1,9 +1,6 @@
 /*
 
-Virtual User Accepted: 0
-Virtual User Tried: 0
-Virtual Total Accepted: 0
-Virtual Total Submissions: 0
+
 Difficulty: Medium
 Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
 
@@ -13,19 +10,8 @@ Note: The length of temperatures will be in the range [1, 30000]. Each temperatu
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         
-        if (temperatures.length==0)
-            return temperatures;
-        
-        int[] indexes=new int[temperatures.length];
-        
-        if (temperatures.length==1){
-            indexes[0]=0;
-            return indexes; 
-
-        }
         Stack<Integer> stack=new Stack<Integer>();
         
-    
         stack.push(0);
         
         for (int k=1;k<temperatures.length;k++){            
@@ -44,7 +30,7 @@ class Solution {
                  }
                 stack.pop();
                 
-                indexes[index]=k-index;  
+                temperatures[index]=k-index;  
             
              }
             
@@ -52,17 +38,15 @@ class Solution {
 
         }
             
-            while (!stack.empty()){
+            while (!stack.empty() && temperatures.length>1){
             
                  int index=stack.pop();
-                indexes[index]=0;
+                 
+                 temperatures[index]=0;
                 
             }
-            return indexes;
+            return temperatures;
         }
         
        
     }
-
-
-

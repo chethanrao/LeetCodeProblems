@@ -52,7 +52,7 @@ class Solution {
 
         }
             
-            while (!stack.empty() && stack.peek()!=null){
+            while (!stack.empty()){
             
                  int index=stack.pop();
                 indexes[index]=0;

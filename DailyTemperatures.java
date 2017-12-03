@@ -39,10 +39,8 @@ class Solution {
         }
             
             while (!stack.empty() && temperatures.length>1){
-            
-                 int index=stack.pop();
-                 
-                 temperatures[index]=0;
+                             
+                 temperatures[stack.pop()]=0;
                 
             }
             return temperatures;

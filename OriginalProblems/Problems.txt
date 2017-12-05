@@ -17,5 +17,6 @@ Given a complete binary tree...find the median?
 of a matrix and a passenger is at another corner diagnolly opposite(right top) the matrix. 
 A car can move up or right . The passenger can move down or left. 
 The passenger moves in a square with one of the sides of length x.
+
 For every move of the car left or up....the passenger moves one block.
-Find the shortest time of the car to the passenger? 
+Find the shortest time of the car to the passenger?(need to refine this problem)

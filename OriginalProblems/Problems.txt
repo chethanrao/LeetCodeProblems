@@ -13,8 +13,9 @@ average of the elements at [depth/2-1,breadth/2-1],[depth/2+1,breadth/2-1],[dept
 if depth of tree is even.
 Given a complete binary tree...find the median?
 
-2) Shortest distance to a moving target: A car is parked at one corner(left bottom) 
+2) Shortest distance to a rotating target: A car is parked at one corner(left bottom) 
 of a matrix and a passenger is at another corner diagnolly opposite(right top) the matrix. 
 A car can move up or right . The passenger can move down or left. 
 The passenger moves in a square with one of the sides of length x.
+For every move of the car left or up....the passenger moves one block.
 Find the shortest time of the car to the passenger? 

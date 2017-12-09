@@ -16,7 +16,7 @@ Given a complete binary tree...find the median?
 2) Shortest distance to a rotating target: A car is parked at one corner(left bottom) 
 of a matrix and a passenger is at another corner diagnolly opposite(right top) the matrix. 
 A car can move up or right .  
-The passenger rotates  around a square with radius x.
+The passenger rotates  around a square with side x.
 
 For every move of the car left or up....the passenger moves one block.
-Find the shortest time of the car to the passenger?(need to refine this problem)
+Find the shortest time of the car to the passenger?

@@ -15,15 +15,10 @@ Your algorithm should use only constant space. You may not modify the values in 
  */
 class SwapNodesInPairs {
     public ListNode swapPairs(ListNode head) {
-        if (head==null)
+        if (head==null || head.next==null)
             return head;
         
-        ListNode newHead=null;
-        
-        if (head.next==null)
-            return head;
-        else
-            newHead=head.next;
+        ListNode newHead=head.next;
         
        ListNode temp=null,temp1=null;
 

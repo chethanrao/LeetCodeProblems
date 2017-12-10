@@ -70,9 +70,7 @@ class ClosestLeafInABinaryTree {
     
     HashMap<Integer,List<Integer>> updateParent(TreeNode root,HashMap<Integer,List<Integer>> hashMap){
         
-        
-        
-        
+            
         int min1=-1,min2=-1,valleft=-1,valright=-1;
         
         List<Integer> list=null;

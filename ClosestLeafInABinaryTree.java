@@ -1,10 +1,5 @@
 /*
-742. Closest Leaf in a Binary Tree My SubmissionsBack to Contest
-User Accepted: 351
-User Tried: 667
-Total Accepted: 356
-Total Submissions: 1586
-Difficulty: Medium
+
 Given a binary tree where every node has a unique value, and a target key k, find the closest leaf node to target k in the tree.
 
 A node is called a leaf if it has no children.

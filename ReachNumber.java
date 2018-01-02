@@ -35,7 +35,7 @@ class ReachNumber {
         }
         
         // In this loop you add extra steps to reach the target if the difference between sum and step is odd
-        // This makes sure that you can get back to the target by flipping the sign one of the numbers.
+        // This makes sure that you can get back to the target by flipping the sign one or more numbers.
         while ((sum-target)%2!=0){
             step++;
             sum=sum+step;

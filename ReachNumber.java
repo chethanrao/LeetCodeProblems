@@ -28,7 +28,7 @@ class ReachNumber {
         int sum=0;
         target=Math.abs(target);
         
-        // In this loop you greedly find the number of steps to reach the target
+        // In this loop you greedily find the number of steps to reach the target
         while (sum<target){
             step++;
             sum=sum+step;

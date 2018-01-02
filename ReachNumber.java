@@ -28,7 +28,7 @@ class ReachNumber {
         int sum=0;
         target=Math.abs(target);
         
-        // In this loop you greedily find the number of steps to reach the target
+        // In this loop you greedily find the number of steps to reach greater than target
         while (sum<target){
             step++;
             sum=sum+step;
@@ -36,6 +36,9 @@ class ReachNumber {
         
         // In this loop you add extra steps to reach the target if the difference between sum and step is odd
         // This makes sure that you can get back to the target by flipping the sign one or more numbers.
+        // If the difference between sum and step is odd you cannot flip a sign of number and get to the target
+        // This is because when you flip a number you subtract two times the number from the original sum which is even
+        // but our difference is odd.
         while ((sum-target)%2!=0){
             step++;
             sum=sum+step;

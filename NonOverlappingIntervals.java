@@ -63,12 +63,10 @@ class NonOverlappingIntervals {
             if (start1>end){
                 Interval interval=new Interval(end,start1);
                 finalList.add(interval);
-                start=start1;
                 end=end1;
                 
             }
             else {
-                start=Math.min(start1,start);
                 
                 end=Math.max(end1,end);
                 

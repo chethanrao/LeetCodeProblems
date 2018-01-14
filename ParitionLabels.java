@@ -35,12 +35,13 @@ class PartitionLabels {
         
         int low=0;
         
-        
-        for (int i=0;i<S.length();i++){
+        int length=S.length();
+      
+        for (int i=0;i<length;i++){
         
             int currMax=hashMap.get(S.charAt(i));
     
-            if (i<=highMax && i!=S.length()-1){
+            if (i<=highMax && i!=length-1){
  
                 if (currMax>highMax)
               
@@ -51,7 +52,7 @@ class PartitionLabels {
                 
                 list.add(highMax-low+1);
                    
-                if (S.length()-1==highMax+1){
+                if (length-1==highMax+1){
                     list.add(1);
                 }
                

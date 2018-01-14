@@ -20,31 +20,7 @@ class PartitionLabels {
         
         List<Integer> list=new ArrayList<Integer>();
 
-        if (S.length()==1){
-            
-            list.add(1);
-            
-            return list;
-        }
-        
-        if (S.length()==2){
-         
-            if (S.charAt(0)==S.charAt(1)){
-            
-                list.add(2);
-                
-                return list;
-            }
-            else {
-                
-                list.add(1);
-                
-                list.add(1);
-                
-                return list;
-            }
-            
-        }
+    
         
         HashMap<Character,Integer> hashMap=new HashMap<Character,Integer>();
         
@@ -60,7 +36,7 @@ class PartitionLabels {
         int low=0;
         
         
-        for (int i=1;i<S.length();i++){
+        for (int i=0;i<S.length();i++){
         
             int currMax=hashMap.get(S.charAt(i));
     

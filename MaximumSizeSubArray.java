@@ -19,19 +19,15 @@ Can you do it in O(n) time?
 class MaximumSizeSubArray {
     public int maxSubArrayLen(int[] nums, int k) {
         int largest=0,sum=0,length;
-        
+        HashMap<Integer,Integer> hashMap=new HashMap<Integer,Integer>();
+
+        hashMap.put(0,0);
+
         for (int i=0;i<nums.length;i++){
             sum+=nums[i];
-            nums[i]=sum;
-        }
-        
-        HashMap<Integer,Integer> hashMap=new HashMap<Integer,Integer>();
-       
-        hashMap.put(0,0);
-        for (int i=0;i<nums.length;i++){
-             
-           if (hashMap.containsKey(nums[i]-k)){
-               int start=hashMap.get(nums[i]-k);
+            
+            if (hashMap.containsKey(sum-k)){
+               int start=hashMap.get(sum-k);
                int end=i;
                length=end-start+1;  
                
@@ -39,10 +35,10 @@ class MaximumSizeSubArray {
                    largest=length;
            }
             
-          if (!hashMap.containsKey(nums[i]))
-              hashMap.put(nums[i],i+1);
+           if (!hashMap.containsKey(sum))
+              hashMap.put(sum,i+1);
         }
         
-        return largest; 
+       return largest; 
     }
 }

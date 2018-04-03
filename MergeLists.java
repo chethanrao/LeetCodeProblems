@@ -14,8 +14,7 @@ class MergeLists {
         int interval=1;
     
         while (interval<lists.length){
-              int i;
-              for (i=0;(i+interval)<lists.length;i=i+(interval*2)){         
+              for (int i=0;(i+interval)<lists.length;i=i+(interval*2)){         
  	              lists[i]=getMergedList(lists[i],lists[i+interval]);
 	       }
               interval=interval*2;

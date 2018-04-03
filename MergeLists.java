@@ -26,8 +26,8 @@ class MergeLists {
      
     ListNode getMergedList(ListNode list1,ListNode list2){
 
-        ListNode mergedNode =new ListNode(0);
-        ListNode origNode=mergedNode;
+            ListNode mergedNode =new ListNode(0);
+            ListNode origNode=mergedNode;
 	    ListNode templist1=list1;
 	    ListNode templist2=list2;
 		

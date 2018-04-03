@@ -17,7 +17,7 @@ class MergeLists {
               int i;
               for (i=0;(i+interval)<lists.length;i=i+(interval*2)){         
  	              lists[i]=getMergedList(lists[i],lists[i+interval]);
-	           }
+	       }
               interval=interval*2;
         }
         
@@ -34,15 +34,15 @@ class MergeLists {
 	    while (templist1!=null && templist2!=null){
 		
             if (templist1.val<templist2.val){
-				 mergedNode.next=templist1;
-			     mergedNode= mergedNode.next;
-				 templist1=templist1.next;
-			}	
-			else {
-				 mergedNode.next=templist2;
-			     mergedNode=mergedNode.next;
-				 templist2=templist2.next;
-			}
+		mergedNode.next=templist1;
+	        mergedNode= mergedNode.next;
+	        templist1=templist1.next;
+		}	
+	     else {
+		 mergedNode.next=templist2;
+	         mergedNode=mergedNode.next;
+                 templist2=templist2.next;
+	      }
 
 	}
     

@@ -26,14 +26,15 @@ public class ArryList<E>{
 		if (i!=index){
 			while (i<index-1){
 				arr[i]=arr[i+1];
-            	i++;
+            			i++;
 			}
 			index--;
 		}
 
 	
 	}
-    @SuppressWarnings("unchecked")
+       
+	@SuppressWarnings("unchecked")
 	public E get(int k) {
 		if (k>=index){
 			throw new ArrayIndexOutOfBoundsException("Index out of range");

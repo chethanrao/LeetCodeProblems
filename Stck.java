@@ -8,9 +8,9 @@ public class Stck<E>{
 	private Object[] arr=null;
 	private int index=0;
 	
-  public Stck(){
-     arr=new Object[size];
-  }
+  	public Stck(){
+     		arr=new Object[size];
+        }
 	
 	public void push(Object o){
 		

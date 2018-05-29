@@ -30,4 +30,6 @@ Given a binary tree find if sum of any subtree is equal to a given target sum.
 If such a sub tree exists return the root of the subtree.
 TreeNode binaryTree(TreeNode node,int targetSum)
 
-5) Given a set of rectangles with (x1,y1),(x2,y2),(x3,y3),(x4,y4) and a range (x5,x6) and (x7,x8) inclusive of the rectanges.return all the missing rectangles in the range (x5,x6) and (x7,x8).
+5) Given a set of rectangles with (x1,y1),(x2,y2),(x3,y3),(x4,y4)
+and a range (x5,x6) and (x7,x8) inclusive of the rectanges.
+return all the missing rectangles in the range (x5,x6) and (x7,x8).

@@ -32,4 +32,4 @@ TreeNode binaryTree(TreeNode node,int targetSum)
 
 5) Given a set of rectangles with (x1,y1),(x2,y2),(x3,y3),(x4,y4)
 and a range (x5,x6) and (x7,x8) inclusive of the rectangles.
-return all the missing vertices of a rectangle in the range (x5,x6) and (x7,x8).
+return all the missing vertices of a rectangles in the range (x5,x6) and (x7,x8).

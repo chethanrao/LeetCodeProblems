@@ -11,25 +11,25 @@ Output: ["2", "4->49", "51->74", "76->99"]
 class MissingRanges {
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
 	List<String> list=new ArrayList<String>();
-    int prev=lower;
-    for (int i=0;i<nums.length;i++){
+    	int prev=lower;
+    	for (int i=0;i<nums.length;i++){
 		if (nums[i]<prev)
 			continue;
 		if (nums[i]==prev){
-            if (prev!=2147483647)
-                prev++;
+            	if (prev!=Integer.MAX_VALUE )
+                	prev++;
 			continue;
 		}
 
 		list.add(getRange(prev,nums[i]-1));
-        if (nums[i]<2147483647)
+        	if (nums[i]<Integer.MAX_VALUE )
 		    prev=nums[i]+1;
-        else
-            prev=2147483647;
+       	        else
+            	    prev=Integer.max_value;
         
 	}
 	
-	if (prev!=2147483647 && prev<=upper)
+	if (prev!=Integer.MAX_VALUE && prev<=upper)
 		list.add(getRange(prev,upper));
 
     return list;

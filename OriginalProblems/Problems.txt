@@ -34,5 +34,6 @@ TreeNode binaryTree(TreeNode node,int targetSum)
 and a range (x5,x6) and (x7,x8) inclusive of the rectangles.
 return all the missing vertices of a rectangles in the range (x5,x6) and (x7,x8).
 
-6) If one draws a straight line through points (x1,y1) and (x2,y2) and cuts a balanced binary tree. Find the number of nodes in each cut part?
-Here node at position (x,y) is at height x and at position y from left of the tree.
+6) If one draws a straight line through points (x1,y1) and (x2,y2) and cuts a balanced binary tree. 
+   Find the number of nodes    in each cut part?
+Here node at position (x,y) is at height x from top and at position y from left most node of the tree at that height.

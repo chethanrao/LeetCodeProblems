@@ -37,3 +37,4 @@ return all the missing vertices of a rectangles in the range (x5,x6) and (x7,x8)
 6) If one draws a straight line through points (x1,y1) and (x2,y2) and cuts a balanced binary tree. 
    Find the number of nodes in each cut part?
 Here node at position (x,y) is at height x from top and at position y from left most node of the tree at that height.
+All the adjacent nodes are of equal distance from each other.

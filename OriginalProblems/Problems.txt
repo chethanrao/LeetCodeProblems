@@ -38,3 +38,13 @@ return all the missing vertices of a rectangles in the range (x5,x6) and (x7,x8)
    Find the number of nodes in each cut part?
 Here node at position (x,y) is at height x from top and at position y from left most node of the tree at that height.
 All the adjacent nodes are of equal distance from each other.
+
+7) Traverse a tree in  the below order and print all the elements in the tree
+
+
+
+
+       4
+    3    7
+  2   6    9
+1   5   8    10

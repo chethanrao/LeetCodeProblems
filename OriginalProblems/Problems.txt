@@ -41,10 +41,9 @@ All the adjacent nodes are of equal distance from each other.
 
 7) Traverse a tree in  the below order and print all the elements in the tree
 
-
-
-
        4
     3    7
   2   6    9
 1   5   8    10
+
+8) find the number of islands in a tree which has 1s and 0s

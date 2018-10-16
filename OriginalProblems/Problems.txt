@@ -47,3 +47,26 @@ All the adjacent nodes are of equal distance from each other.
 1   5   8    10
 
 8) find the number of islands in a tree which has 1s and 0s
+
+9) Given a n x m grid and a String of 4 characters. Find the number of occurrences of the 4 characters in a square with each vertex a character of a string clockwise or anti clockwise ?
+
+
+Example input:
+1)n x m grid:
+  a  b  t  e
+  c  q  r  m
+  s  n  p  o
+  g  t  k  z
+
+  bnoe
+
+
+  b , n , o , e occurs once in the grid at position [0,1]  [2,1]  [2,3]  [0,3] in anti-clockwise manner.
+
+
+
+
+
+
+
+

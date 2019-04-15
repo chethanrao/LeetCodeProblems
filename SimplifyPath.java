@@ -41,10 +41,10 @@ class Solution {
 
 		for (int i = 0; i < pathArray.length; i++) {
 
-			if (pathArray[i].trim().isEmpty() || pathArray[i].trim().equals("."))
+			if (pathArray[i].trim().isEmpty() || pathArray[i].equals("."))
 				continue;
 
-			if (pathArray[i].trim().equals("..")) {
+			if (pathArray[i].equals("..")) {
 				if (pathArrayActual.size() > 0) {
 					pathArrayActual.remove(pathArrayActual.size() - 1);
 				}

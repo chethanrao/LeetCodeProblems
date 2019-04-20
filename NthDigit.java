@@ -13,9 +13,6 @@ class Solution {
 
 
 	while (countOfDigits<n){
-                System.out.println("countOfDigits:"+countOfDigits);
-                System.out.println("value of n:"+n);
-
 		prevCountOfDigits=countOfDigits;
 		countOfDigits=countOfDigits+numberOfDigits*totalNumberOfNumbersInTheRange;
 
@@ -24,11 +21,11 @@ class Solution {
       
         
         numberOfDigits=numberOfDigits+1;
-        System.out.println("numberOfDigits:"+numberOfDigits);
-                System.out.println("totalNumberOfNumbersInTheRange:"+totalNumberOfNumbersInTheRange);
-                System.out.println("countOfDigits:"+countOfDigits);
+  
           if ((long)totalNumberOfNumbersInTheRange*10>=Integer.MAX_VALUE){
-              numberOfDigits=numberOfDigits+1;
+              
+           if (countOfDigits<n){numberOfDigits=numberOfDigits+1;
+              		prevCountOfDigits=countOfDigits;}
 
             break;
         }
@@ -39,15 +36,6 @@ class Solution {
 
 	int possibleNumber=getNumberFromDigits(numberOfDigits-1)+(n-prevCountOfDigits)/(numberOfDigits);
             
-        
-        System.out.println("numberOfDigits:"+numberOfDigits);
-
-        System.out.println("possibleNumber:"+possibleNumber);
-                        System.out.println("prevCountOfDigits:"+prevCountOfDigits);
-
-                System.out.println("(n-prevCountOfDigits)%numberOfDigits:"+((n-prevCountOfDigits)%numberOfDigits));
-
-        
 	if ((n-prevCountOfDigits)%numberOfDigits==0)
 		return Character.getNumericValue(String.valueOf(possibleNumber).charAt(String.valueOf(possibleNumber).length()-1));
 	else{    
@@ -75,3 +63,4 @@ class Solution {
 }
 
 } 
+

@@ -64,7 +64,7 @@ Example input:
   b , n , o , e occurs once in the grid at position [0,1]  [2,1]  [2,3]  [0,3] in anti-clockwise manner.
 
 10)
-In a frictionless billiards board having co-ordinates (0,0),(0,x),(x,0),(x,x) when a ball starts from position  (0,y) and strikes (y,0)...find the co-ordinates of the line at nth impact on the boundaries of the board.
+In a frictionless billiards board having co-ordinates (0,0),(0,x),(x,0),(x,x) when a ball starts from position  (0,y) and strikes (y,0)...find the co-ordinates of the line at nth impact on the boundaries of the board.(Given the angle of incidence equal to angle of reflection.)
 
 
 

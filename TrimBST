@@ -1,0 +1,66 @@
+/*
+Given a binary search tree and the lowest and highest boundaries as L and R, 
+trim the tree so that all its elements lies in [L, R] (R >= L).
+You might need to change the root of the tree, 
+so the result should return the new root of the trimmed binary search tree.
+*/
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode trimBST(TreeNode root, int L, int R) {
+        if (root==null){
+            return root;
+        }
+        
+        
+        TreeNode nodeLeft=null;
+        
+        if (root.val>=L)
+             nodeLeft= trimBST(root.left,L,R);
+        
+        TreeNode nodeRight=null;
+
+        if (root.val<=R)
+            nodeRight=trimBST(root.right,L,R);
+        
+        if (root.val==L){
+            root.right=nodeRight;
+            root.left=null;
+            return root;
+        }
+        else if (root.val==R){
+             root.left=nodeLeft;
+            root.right=null;
+            return root;
+        }
+        
+        if (root.val>L && root.val<R){
+            root.left=nodeLeft;
+            root.right=nodeRight;
+            return root;
+        }
+        
+        else if (root.val<L){
+            return nodeRight;
+        }
+        else{
+            return nodeLeft;
+        }
+       
+        
+            
+       
+    }
+    
+        
+         
+    
+}

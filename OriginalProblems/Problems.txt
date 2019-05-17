@@ -66,7 +66,8 @@ Example input:
 10)
 In a frictionless billiards board having co-ordinates (0,0),(0,x),(x,0),(x,x) when a ball starts from position  (0,y) and strikes (y,0)...find the co-ordinates of the line at nth impact on the boundaries of the board.(Given the angle of incidence equal to angle of reflection.)
 
-
+11)
+In a matrix where each number represents height of the block at that square. find the maximum amount of water that can be trapped in between the matrix?
 
 
 

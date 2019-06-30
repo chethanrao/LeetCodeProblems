@@ -69,7 +69,8 @@ In a frictionless billiards board having co-ordinates (0,0),(0,x),(x,0),(x,x) wh
 11)
 In a matrix where each number represents height of the block at that square. find the maximum amount of water that can be trapped in between the matrix?
 
-
+12) 
+Cut a circular linked list into two single linkedlist such that both singly linked list have same sum.
 
 
 

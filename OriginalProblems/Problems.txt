@@ -72,5 +72,7 @@ In a matrix where each number represents height of the block at that square. fin
 12) 
 Cut a circular linked list into two single linkedlist such that both singly linked list have same sum.
 
+13) given a list of nodes remove nodes in that order and find the final number of unconnected trees that are obtained.
+follow up: find the number of unconnected trees at each step
 
 

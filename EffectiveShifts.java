@@ -37,10 +37,9 @@ shift[i].length == 2
 0 <= shift[i][1] <= 100
 */
 
-class EffectiveShifts {
+class Solution {
     public String stringShift(String s, int[][] shift) {
-        int effectiveshifts=getEffectiveNumberOfShifts(shift);
-        StringBuilder builder=new StringBuilder();
+        int effectiveshifts=getEffectiveNumberOfShifts(shift);      
         effectiveshifts=effectiveshifts%s.length();
          if (effectiveshifts==0){
             return s;
@@ -51,13 +50,9 @@ class EffectiveShifts {
         else {
              effectiveshifts=Math.abs(effectiveshifts);         
         }
-         for (int i=effectiveshifts;i<s.length();i++){
-                builder.append(s.charAt(i));
-         }
-            
-         for (int i=0;i<effectiveshifts;i++){
-                builder.append(s.charAt(i));
-         }
+        StringBuilder builder=new StringBuilder();
+        builder.append(s.substring(effectiveshifts,s.length()));
+        builder.append(s.substring(0,effectiveshifts));
         return builder.toString();
     }
     

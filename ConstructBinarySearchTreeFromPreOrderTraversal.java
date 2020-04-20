@@ -40,18 +40,16 @@ class Solution {
         if (start>end || start<0 || end>preorder.length){
             return null;
         }
-         
 
-        int rootValue=preorder[start];
-        TreeNode finalNode=new TreeNode(rootValue);
+        TreeNode finalNode=new TreeNode(preorder[start]);
         int start1=-1;
         int start2=-1;
-       for (int i=start+1;i<end;i++){
-           if (start1==-1 && preorder[i]<rootValue){
+        for (int i=start+1;i<end;i++){
+           if (start1==-1 && preorder[i]<preorder[start]){
                start1=i;
            }
            
-            if (start2==-1 && preorder[i]>rootValue){
+            if (start2==-1 && preorder[i]>preorder[start]){
                start2=i;
                break;
            }

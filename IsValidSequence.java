@@ -16,14 +16,6 @@
  */
 class Solution {
     public boolean isValidSequence(TreeNode root, int[] arr) {
-        if (arr.length==0){
-            if (root==null){
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
         return isValidSequence(root,arr,0);
     }
     
@@ -40,4 +32,3 @@ class Solution {
         
     }
 }
-*/

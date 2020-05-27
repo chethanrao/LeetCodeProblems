@@ -36,7 +36,10 @@ Note:
     There does not exist i != j for which dislikes[i] == dislikes[j].
 
 */
+
+
 class Solution {  
+ /*This solution is based on this paper https://www.math.uchicago.edu/~may/VIGRE/VIGRE2007/REUPapers/FINALAPP/Salvatore.pdf*/
     public boolean possibleBipartition(int N, int[][] dislikes) {
         Map<Integer,List<Integer>> mapOfLists=getMapFromDislikes(dislikes);
         Map<Integer,Integer> visitedVertices=new HashMap<Integer,Integer>();     
